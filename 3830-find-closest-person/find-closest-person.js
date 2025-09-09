@@ -7,8 +7,6 @@
 var findClosest = function(x, y, z) {
     let a=Math.abs(x-z)
     let b=Math.abs(y-z)
-    console.log(a)
-     console.log(b)
     if(a===b) return 0
 
     return a<b ? 1:2
