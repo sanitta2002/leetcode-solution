@@ -10,5 +10,4 @@ var thirdMax = function(nums) {
        return a[0]
     }
         return a[2]
-    
 };
