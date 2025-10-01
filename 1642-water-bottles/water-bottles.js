@@ -4,7 +4,7 @@
  * @return {number}
  */
 var numWaterBottles = function(numBottles, numExchange) {
-   let totalDrank = numBottles;
+     let totalDrank = numBottles;
     let empty = numBottles;
     while (empty >= numExchange) {
         let newBottles = Math.floor(empty / numExchange);
