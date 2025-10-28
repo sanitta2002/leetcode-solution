@@ -3,6 +3,6 @@
  * @return {boolean}
  */
 var checkIfPangram = function(sentence) {
-    let b= new Set(sentence)
-    return b.size===26
+    let a=new Set(sentence)
+    return a.size===26
 };
