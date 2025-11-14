@@ -4,12 +4,7 @@
  * @return {number[]}
  */
 var maxKDistinct = function(nums, k) {
-    
-    
-    let sort=nums.sort((a,b)=>b-a)
-   
-    let set= new Set(nums)
-    
-    return [...set].slice(0,k)
-    
+      nums.sort((a,b)=>b-a)
+      let a=new Set(nums)
+      return [...a].splice(0,k)
 };
