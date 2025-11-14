@@ -6,7 +6,7 @@
 var getLucky = function(s, k) {
     let str=''
     for(let char of s){
-        str+=(char.charCodeAt(0)-96)
+        str+=(char.charCodeAt(0)-96)   
     }
     while(k>0){
         let sum=0
@@ -16,5 +16,5 @@ var getLucky = function(s, k) {
         str=sum.toString()
         k--
     }
-    return parseInt(str)
+    return Number(str)
 };
