@@ -5,17 +5,17 @@
 var numSub = function(s) {
     let res=0
     let count=0
-    let mod = 1000000007;
     for(i=0;i<s.length;i++){
         if(s[i]==='1'){
             count++
         }else{
-            res=(res+(count*(count+1)/2))%mod
+             res+=(count*(count+1))/2
             count=0
         }
 
     }
-    res=(res+(count*(count+1)/2))%mod
-    return res
+    res+=(count*(count+1))/2
+    let a=(10**9)+7
+    return res%a
     
 };
