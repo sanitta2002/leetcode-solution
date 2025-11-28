@@ -18,7 +18,7 @@ let map={}
     }
   }
   for(i=0;i<score.length;i++){
-    res[i]=map[score[i]]
+    res.push(map[score[i]])
   }
   return res
 };
