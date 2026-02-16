@@ -3,7 +3,7 @@
  * @return {boolean}
  */
 var isHappy = function(n) {
-    let seen=new Set()
+     let seen=new Set()
     while(n!==1){
         if(seen.has(n)) return false
         seen.add(n)
