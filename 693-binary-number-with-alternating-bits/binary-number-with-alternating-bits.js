@@ -3,15 +3,11 @@
  * @return {boolean}
  */
 var hasAlternatingBits = function(n) {
-    let prev=-1
-    while(n>0){
-        let cur=n&1
-        if(prev===cur){
+    let b=n.toString(2)
+    for(let i=0;i<b.length;i++){
+        if(b[i]===b[i+1]){
             return false
         }
-        prev=cur
-        n>>=1
     }
     return true
-
 };
