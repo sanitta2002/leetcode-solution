@@ -3,16 +3,17 @@
  * @return {number}
  */
 var numSteps = function(s) {
-    let num = BigInt('0b' + s);
-     let steps = 0n;
-
-    while(num > 1n){
-        if(num % 2n === 0n){
-            num = num / 2n;
+    let steps = 0;
+    let carry = 0;
+    for (let i = s.length -1; i>0;i--){
+        const bit = s[i] - '0';
+        if(bit + carry === 1){
+            steps += 2;
+            carry = 1;
         }else{
-            num = num + 1n;
+            steps += 1;
         }
-        steps++;
     }
-    return Number(steps);
+
+    return steps + carry;
 };
