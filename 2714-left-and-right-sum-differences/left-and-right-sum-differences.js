@@ -3,7 +3,7 @@
  * @return {number[]}
  */
 var leftRightDifference = function(nums) {
-    let leftSum =[]
+     let leftSum =[]
     let rightSum=[]
     let res=[]
 
@@ -31,5 +31,4 @@ var leftRightDifference = function(nums) {
         }
     }
     return res
-
 };
