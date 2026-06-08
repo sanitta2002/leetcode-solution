@@ -5,17 +5,17 @@
  */
 var pivotArray = function(nums, pivot) {
     let arr=[]
-    for(i=0;i<nums.length;i++){
+    for(let i=0;i<nums.length;i++){
         if(nums[i]<pivot){
             arr.push(nums[i])
         }
     }
-    for(i=0;i<nums.length;i++){
-        if(nums[i]==pivot){
+    for(let i=0;i<nums.length;i++){
+        if(nums[i]===pivot){
             arr.push(nums[i])
         }
     }
-      for(i=0;i<nums.length;i++){
+    for(let i=0;i<nums.length;i++){
         if(nums[i]>pivot){
             arr.push(nums[i])
         }
