@@ -3,8 +3,8 @@
  * @param {number[]} weights
  * @return {string}
  */
-var mapWordWeights = function (words, weights) {
-    let result = "";
+var mapWordWeights = function(words, weights) {
+     let result = "";
 
     for (let word of words) {
         let sum = 0;
