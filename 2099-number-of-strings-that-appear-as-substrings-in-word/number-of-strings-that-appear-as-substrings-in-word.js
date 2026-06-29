@@ -4,7 +4,7 @@
  * @return {number}
  */
 var numOfStrings = function(patterns, word) {
-    let count = 0;
+     let count = 0;
 
     for (let pattern of patterns) {
         if (word.includes(pattern)) {
