@@ -4,12 +4,14 @@
  * @return {number[]}
  */
 var targetIndices = function(nums, target) {
-    let arr=[]
-    nums.sort((a,b)=>a-b)
-    for(let i=0;i<nums.length;i++){
-        if(nums[i]===target){
-            arr.push(i)
+      let array=[]
+    let num=nums.sort((a,b)=>a-b)
+    for(var i=0;i<num.length;i++)
+    {
+        if(num[i]===target)
+        {
+            array.push(i)
         }
     }
-    return arr
+    return array
 };
